@@ -8,7 +8,7 @@ from variables import *
 
 # if you are using gmail you have to activate unsecure apps in your account
 
-server = smtplib.SMTP('smtp.gmail.com', 587)
+server = smtplib.SMTP(smtp_server, 587)
 server.starttls()
 server.login(from_mail, mail_password)
 
